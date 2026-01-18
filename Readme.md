@@ -19,3 +19,36 @@
 - chian of thought
 - Automated chain of tought
 - persona based prompting
+
+
+
+## Hugging Face 
+  - hugging face is like a github for ai models where we use ai models build  , use and share models spaces and datasets
+
+## how work 
+ - User Input
+   │
+   ▼
+"Who are you?"
+   │
+   ▼
+┌─────────────────────────────┐
+│  Hugging Face Pipeline      │
+│  (text-generation task)     │
+└─────────────────────────────┘
+   │
+   ▼
+┌─────────────────────────────┐
+│   Transformer Model          │
+│  (google/gemma-3-270m-it)   │
+│  - Understands input text    │
+│  - Predicts next words       │
+└─────────────────────────────┘
+   │
+   ▼
+Python Output
+[{'generated_text': "I am Gemma, an AI assistant here to help you."}]
+   │
+   ▼
+Print to Screen
+"I am Gemma, an AI assistant here to help you."
